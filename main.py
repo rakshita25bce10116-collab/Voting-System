@@ -14,11 +14,11 @@ def setup_candidates():
     try:
         num = int(input("Enter number of candidates: "))
     except ValueError:
-        print("❌ Please enter a valid number!")
+        print("Please enter a valid number!")
         return
     
     if num <= 0:
-        print("❌ Number of candidates must be greater than 0!")
+        print(" Number of candidates must be greater than 0!")
         return
 
     for i in range(1, num + 1):
@@ -27,7 +27,7 @@ def setup_candidates():
         party = input("Party Name: ").strip()
         
         if not name or not party:
-            print("❌ Candidate name and party cannot be empty!")
+            print(" Candidate name and party cannot be empty!")
             continue
             
         cid = f"C{i}"
@@ -40,17 +40,17 @@ def setup_candidates():
 def cast_vote():
     """Handle voting process"""
     if not candidates:
-        print("❌ No candidates registered yet!")
+        print("No candidates registered yet!")
         return
         
     voter_id = input("\nEnter your Voter ID: ").strip()
 
     if voter_id not in voters:
-        print("❌ Invalid Voter ID! Please register first.")
+        print("Invalid Voter ID! Please register first.")
         return
 
     if voters[voter_id]["has_voted"]:
-        print("❌ You have already voted!")
+        print("You have already voted!")
         return
 
     print("\n--- CANDIDATES ---")
@@ -60,7 +60,7 @@ def cast_vote():
     choice = input("\nEnter Candidate ID to vote: ").strip()
 
     if choice not in candidates:
-        print("❌ Invalid Candidate ID!")
+        print("Invalid Candidate ID!")
         return
 
     votes[voter_id] = choice
@@ -74,7 +74,7 @@ def main_menu():
     
     # Check if candidates were setup successfully
     if not candidates:
-        print("❌ Candidate setup failed. Exiting program.")
+        print(" Candidate setup failed. Exiting program.")
         return
     
     while True:
@@ -97,8 +97,9 @@ def main_menu():
             print("\nThank you for using the Indian Voting System! Goodbye!")
             break
         else:
-            print("❌ Invalid Choice! Please enter 0, 1, 2, or 3.")
+            print(" Invalid Choice! Please enter 0, 1, 2, or 3.")
 
 # Start the program
+
 
 main_menu()
