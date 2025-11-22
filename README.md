@@ -1,5 +1,7 @@
 # Voting-System
+
 ## Project Title: Indian Voting System
+
 ## Overview:
 This project is a simplified console-based voting system written in Python.
 It simulates how a basic voting process works in India, without requiring any admin login.
@@ -54,9 +56,13 @@ Shows total vote count for each candidate
 Declares the winner
 
 ## Technologies / Tools Used
-Python 3.x, 
-Dictionaries & List, 
-Random module, 
+
+Python 3.x
+
+Dictionaries & List
+
+Random module
+
 Console I/O
 
 No external libraries are required.
@@ -88,7 +94,8 @@ python voting_system.py
 
 The program will start and ask for number of candidates.
 
-🧪 Instructions for Testing
+
+## Instructions for Testing
 
 Follow these steps to test the voting system:
 
@@ -99,11 +106,17 @@ Example:
 Enter number of candidates: 3
 
 ✔️ Step 2: Enter candidate details
+
 Candidate 1 Name: Rahul
+
 Party: AAP
+
 Candidate 2 Name: Sneha
+
 Party: BJP
+
 Candidate 3 Name: Arjun
+
 Party: INC
 
 ✔️ Step 3: Register voters
@@ -113,15 +126,21 @@ From main menu → select option 1
 Example:
 
 Full Name: Ramesh
+
 Age: 22
+
 Your Voter ID is: IND54321
+
 
 ✔️ Step 4: Cast Votes
 
 Choose option 2
+
 Enter valid voter ID → choose candidate ID
 
 ✔️ Step 5: Show Results
 
 Choose option 3
+
 See votes per candidate & winner
+
