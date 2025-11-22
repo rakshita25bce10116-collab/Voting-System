@@ -1,55 +1,36 @@
-Employee Database Manager – Project Statement
+## Problem Statement
+The objective of this project is to design and develop a simple, console-based Indian Voting System using Python.
+The system must allow users to:
+Enter the number of candidates.
+Enter the names of all candidates.
+Allow multiple voters to cast their votes.
+Ensure each voter can vote only once.
+Display the final election results with vote counts and the winning candidate.
+The system should be easy to use, secure from duplicate voting, and efficient for small-scale election simulations such as class-level or club-level elections.
 
+## Scope of the Project
+The scope of this project includes:
+Basic voting functionality for a small group.
+Prevention of duplicate votes using voter IDs.
+Result generation with winner declaration.
+Console-based interaction for simplicity.
+No external admin panel or database; all operations occur at runtime.
+The project does not include:
+Biometric or OTP-based verification.
+Large-scale or real-time election management.
+Graphical interfaces or web connectivity.
 
-1. Problem Statement:
+## Target Users
+This project is intended for:
+Students learning Python programming.
+Educators who want a simple election demo tool for class activities.
+Small groups, clubs, or teams needing a basic voting simulation.
+Beginners practicing Python input/output, loops, and dictionaries.
 
-Organizations often struggle with managing employee data using scattered files or manual records. This leads to errors, duplication, and difficulty in retrieving information. A simple digital system is needed to store, update, search, and manage employee details efficiently.
-
-
-
-2. Scope of the Project:
-
-Maintain a structured database of employees
-
-Provide a user-friendly interface for performing CRUD operations
-
-Ensure persistent data storage using files/JSON/SQLite
-
-Keep the system lightweight and easy to deploy
-
-Focus on core employee information management (not payroll or attendance)
-
-
-
-3. Target Users:
-
-HR departments
-
-Small organizations
-
-Educational institutions
-
-Project developers learning database and file handling
-
-Anyone needing a basic employee record system
-
-
-
-4. High-Level Features:
-
-Add new employee records
-
-View complete employee list
-
-Search employees by ID or name
-
-Update existing employee information
-
-Delete employee records
-
-Save data persistently
-
-Simple menu-driven interface
-
-
-
+## High-Level Features
+Dynamic Candidate Entry – Users specify the number of candidates and their names at the start.
+Secure Voting – Each voter uses a unique Voter ID; repeated IDs are blocked.
+Real-Time Vote Counting – Votes are instantly added to candidate totals.
+Winner Declaration – The system automatically calculates and displays the winner.
+User-Friendly Console Interface – Clear instructions for smooth usage.
+Support for Multiple Voters – Keeps accepting votes until users choose to stop.
