@@ -31,10 +31,11 @@ def display_election_results():
     winner_id = max(vote_count, key=vote_count.get)
     winner_info = candidates[winner_id]
     
-    print(f"\n🏆 WINNER: {winner_info['name']} ({winner_info['party']})")
+    print(f"\n WINNER: {winner_info['name']} ({winner_info['party']})")
     
     # Show statistics
     total_voters = len(voters)
     total_votes = len(votes)
     print(f"\nTotal Registered Voters: {total_voters}")
+
     print(f"Total Votes Cast: {total_votes}")
