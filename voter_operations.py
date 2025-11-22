@@ -18,11 +18,11 @@ def handle_voter_registration():
     try:
         age = int(input("Enter Age: "))
     except ValueError:
-        print("❌ Please enter a valid age!")
+        print("Please enter a valid age!")
         return None
 
     if age < 18:
-        print("❌ You must be 18+ to register.")
+        print(" You must be 18+ to register.")
         return None
 
     # Generate unique voter ID
@@ -37,5 +37,6 @@ def handle_voter_registration():
         "has_voted": False
     }
 
-    print(f"\n✅ Registration Successful! Your Voter ID is: {voter_id}")
+    print(f"\n Registration Successful! Your Voter ID is: {voter_id}")
+
     return voter_id
